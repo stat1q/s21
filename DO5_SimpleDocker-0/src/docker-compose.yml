@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  nginx_server:
+    build: dk-cmp/.
+    container_name: nginx_server
+    tty: true
+    ports:
+      - "80:8080"
+     
+  mini_server:
+    image: msrv
+    restart: always
+    container_name: mini_server
+    tty: true 
+    links: 
+      - nginx_server
