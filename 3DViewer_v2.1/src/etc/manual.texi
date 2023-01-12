@@ -1,0 +1,107 @@
+input texinfo
+@setfilename manual
+@settitle 3DViewer v2.0
+@documentencoding UTF-8
+
+@copying
+Copyright © 2022 by locie
+@end copying
+
+@titlepage
+@title Short guide to using the 3DViewer.
+@vskip 
+@insertcopying
+@author locie
+@end titlepage
+
+@ifnottex
+@node Top
+@top 3DViewer v2.0
+@insertcopying
+@end ifnottex
+
+@menu
+* Basic information:: This section provides general information about the operation of 3D_Viewer
+* Interface:: This section provides information about the basic user interface
+* Settings:: This section provides information about the settings interface
+* Record:: This section provides information about recording screenshots and gif animations
+* Texture:: This section provides information about texturing model and light parameters
+@end menu
+
+@node Basic information
+@chapter Basic information
+
+3D_Viewer is developed in the C++ programming language using QT Creator version 6.2. @*
+Opengl technology is used to render the models. @*
+The program is designed to view 3D models in a wireframe viewer (3D Viewer).  @*
+Models are loaded from .obj files and can be viewed on the screen with the ability to rotate, scale and move.
+
+@node Interface
+@chapter Interface
+
+@enumerate
+@item
+Open file: @*
+Click the "Open File" button to open the file. @*
+Select the file with the .obj extension and click "Open". @*
+The model will be displayed in the visualization area.
+@item
+Reset button: @*
+The "Reset" button is used to reset the model to its original state.
+@item
+Affine transformations: @*
+You can rotate, move or scale the image by a specified angle. @*
+To do this, use the corresponding buttons: "Rotate", "Move", "Scale". @*
+In the field on the left you set the angle.
+@item
+Status bar: @*
+The status bar displays information about the loaded model - file name, number of vertices and edges.
+@end enumerate
+
+@node Settings
+@chapter Settings
+
+@enumerate
+@item
+In the settings fields it is possible to choose: @*
+- projection type @*
+- line type, thickness and color @*
+- vertex type, thickness and color @*
+- background color @*
+@item
+The button "Save settings" saves the settings to the file /etc/config.ini. @*
+@item
+The "Load settings" button loads the settings from the file /etc/config.ini. @*
+@item
+The button "Reset to default" resets the settings to the default values.
+@end enumerate
+
+@node Record
+@chapter Record
+
+@enumerate
+@item
+The "Save screenshot" button saves a screenshot of the selected extension (bmp, jpg) to the folder with the project. @*
+@item
+To record gif animation, click the "Record" button and use the affine transformation buttons, each click will be recorded as a separate frame. @*
+If the flag "auto" is set, the model will be automatically rotated 360 degrees on the Y-axis. @*
+@item
+After creating the frames, click "Save to GIF" and choose a place to save the gif-image.
+@end enumerate
+
+@node Texture
+@chapter Record
+
+@enumerate
+@item
+The "Remove Texture" button delete a installing texture from model. @*
+@item
+The "Add Texture" button add a texture to model. You can choice a *.bmp file and apply in model. @*
+@item
+You can change type lighting. Three type of view model: with Soft Shading or Flat Shading, or without filing - Wireframe Model.@*
+@item
+You can save UV-map(Texture) like *.bmp file.@*
+@end enumerate
+
+
+@bye

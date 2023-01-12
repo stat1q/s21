@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>fshader.fsh</file>
+        <file>vshader.vsh</file>
+        <file>fshader_flat.fsh</file>
+        <file>fshader_points.fsh</file>
+        <file>vshader_flat.vsh</file>
+        <file>vshader_points.vsh</file>
+        <file>fshader_frame.fsh</file>
+        <file>vshader_frame.vsh</file>
+    </qresource>
+</RCC>
